@@ -1,0 +1,26 @@
+{
+  "name": "harlon-parliament",
+  "version": "1.0.0",
+  "description": "The website for Harlon's Federal Parliament.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarlonServer/harlon-parliament.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarlonServer/harlon-parliament/issues"
+  },
+  "homepage": "https://github.com/HarlonServer/harlon-parliament#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
