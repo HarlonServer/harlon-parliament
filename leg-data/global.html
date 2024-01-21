@@ -1,0 +1,163 @@
+---
+layout: layout.html
+sitetitle: Legislation Database
+title: Legislation Database
+og_content: Search and view all legislation introduced into Harlon's Parliament.
+hero_image: /img/parliament.png
+---
+
+<main id="content" class="nsw-container nsw-p-top-sm nsw-p-bottom-lg" style="--nsw-focus: #ffffff00;--nsw-text-hover: #5DA81811;">
+  <div class="nsw-layout">
+    <div class="nsw-layout__main">
+      <p class="nsw-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <div class="nsw-m-top-lg">
+        <div class="nsw-form__input-group">
+          <label class="sr-only" for="search-input">Search</label>
+          <input class="nsw-form__input" type="text" id="search-input" name="search-input" value="" onkeyup="filterSearch()">
+          <button class="nsw-button nsw-button--dark nsw-button--flex" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+  </div>
+  <div class="nsw-layout">
+    <div class="nsw-layout__sidebar">
+      <div class="nsw-filters nsw-filters--instant">
+        <div class="nsw-filters__wrapper">
+          <div class="nsw-filters__title">Filters</div>
+          <div class="nsw-filters__list">
+            <div class="nsw-filters__item">
+              <div class="nsw-filters__item-content" style="--nsw-focus: #5DA818;">
+                <label class="nsw-form__label" for="filters-instant-regions-1">Region</label>
+                <select class="nsw-form__select" name="filters-instant-regions-1" id="filters-instant-regions-1" onchange="filterSearch()"><option value="undefined">Please select</option>
+                  <option value="fed">Federation of Harlon</option> 
+                  <optgroup label="State Governments">
+                    <option value="sl">Duch&#xE9; de Sealand</option>
+                    <option value="er">Freistaat Ehlrain</option>
+                    <option value="ac">State of Acricene</option>
+                    <option value="tr">State of Tryon</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="nsw-filters__item">
+              <div class="nsw-filters__item-content">
+                <fieldset class="nsw-form__fieldset">
+                  <legend class="nsw-form__legend">Categories</legend>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="ad" id="filters-instant-categories-0-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-0-1">Administrative</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="bu" id="filters-instant-categories-1-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-1-1">Budgetary</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="em" id="filters-instant-categories-2-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-2-1">Events and Media</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="fr" id="filters-instant-categories-3-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-3-1">Foreign Relations</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="gp" id="filters-instant-categories-4-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-4-1">Government Programs</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="in" id="filters-instant-categories-5-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-5-1">Infrastructural</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="pa" id="filters-instant-categories-6-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-6-1">Parliamentary Action</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="re" id="filters-instant-categories-7-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-7-1">Regulation</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="sm" id="filters-instant-categories-8-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-8-1">Server Mechanics</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="sa" id="filters-instant-categories-9-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-9-1">State Agreement</label>
+                  <input class="nsw-form__checkbox-input" type="checkbox" name="filters-instant-categories" value="st" id="filters-instant-categories-10-1" onchange="filterSearch()">
+                  <label class="nsw-form__checkbox-label" for="filters-instant-categories-10-1">Statistics</label>
+                </fieldset>
+              </div>
+            </div>    
+          </div>
+          <div class="nsw-filters__cancel">
+            <button type="reset">Clear all filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nsw-layout__main">
+      <div class="nsw-results-bar">
+          <div class="nsw-results-bar__info" id="thereareresults3">Showing <span id="count-filter">0</span> result<span id="count-plural">s</span> out of <span id="count-total">0</span> entries</div>
+          <div class="nsw-results-bar__info" id="noresults2">Sorry, no results found for your search</div>
+      </div>
+
+      <div class="nsw-search-results">
+        <div class="nsw-list-item search-result" data-region="fed" data-tag="bu" data-date="2023-12-20T00:00:00+0000">
+          <div class="nsw-list-item__content">
+              <div class="nsw-list-item__label"><span class="nsw-status-label nsw-status-label--success" style="background-color:#5DA818;border-color:#5DA818">
+                      Federation of Harlon</span>&nbsp;&nbsp;<span class="nsw-status-label nsw-status-label--success" style="background-color:#5DA818;border-color:#5DA818">
+                      Budgetary</span>&nbsp;&nbsp;<span class="nsw-status-label nsw-status-label--neutral">
+                      20/12/2023</span></div>
+
+            <div class="nsw-list-item__title"><a href="/leg-data/docs/fed_hb3088_TaxCutsof2023Act" target="_blank" style="color:black;text-decoration:none">HB 3-088 Tax Cuts and Changes of 2023 Act</a></div>
+            <div class="nsw-list-item__copy">The purpose of this bill is to bring reforms to the existing tax code that was previously passed in 2022.</div>
+          </div>
+        </div>
+          <hr id="noresults4" style="display:none">
+          <div id="noresults1" style="display:none" class="nsw-m-top-xl">
+            <h4>Didn&apos;t find what you were looking for?</h4>
+            <ul>
+              <li>Try using different or fewer keywords </li>
+              <li>Check your spelling</li>
+              <li>Try broader or general search terms</li>
+            </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+    function filterSearch() {
+        var txtInput, txtFilter, searchResults, i, txtValue, n, areCategoriesInUse;
+        var checkedCategories = [];
+        txtInput = document.getElementById('search-input');
+        txtFilter = txtInput.value.toUpperCase();
+        searchResults = document.getElementsByClassName("search-result");
+        n = 0;
+        
+        for (i=0; i<=10; i++){
+        if(document.getElementById('filters-instant-categories-'+i+'-1').checked ){
+            checkedCategories.push(document.getElementById('filters-instant-categories-'+i+'-1').value);
+        }
+    }
+    
+        for (i=0; i<searchResults.length; i++){
+            txtValue = searchResults[i].getElementsByClassName("nsw-list-item__title")[0].innerText + searchResults[i].getElementsByClassName("nsw-list-item__copy")[0].innerText;
+            if (txtValue.toUpperCase().indexOf(txtFilter) > -1 && 
+                    ( document.getElementById('filters-instant-regions-1').value === searchResults[i].getAttribute('data-region') 
+                    || document.getElementById('filters-instant-regions-1').value === "undefined") &&
+                    ( checkedCategories.length === 0
+                    || checkedCategories.includes(searchResults[i].getAttribute('data-tag')) )) {
+                searchResults[i].style.display = "";
+                n++;
+            } else {
+                searchResults[i].style.display = "none";
+            }
+        }
+        
+        document.getElementById("count-filter").innerHTML = n;
+        document.getElementById("count-total").innerHTML = searchResults.length;
+        if(n===1){
+            document.getElementById("count-plural").innerHTML = "";
+        }else{
+            document.getElementById("count-plural").innerHTML = "s";
+        }
+        
+        if(n===0){
+            document.getElementById("noresults1").style.display = "";
+            document.getElementById("noresults2").style.display = "";
+            document.getElementById("thereareresults3").style.display = "none";
+            document.getElementById("noresults4").style.display = "";
+        }else{
+            document.getElementById("noresults1").style.display = "none";
+            document.getElementById("noresults2").style.display = "none";
+            document.getElementById("thereareresults3").style.display = "";
+            document.getElementById("noresults4").style.display = "none";
+        }
+    }
+    
+    filterSearch();
+</script>
