@@ -101,38 +101,28 @@
   
           <ul class="nsw-main-nav__sub-list">
             <li>
-              <a href="/leg-data/1term">
-                  <span>1<sup>st</sup> Term</span>
+              <a href="/leg-data/global?region=fed">
+                  <span>Federation of Harlon</span>
               </a>
             </li>
             <li>
-              <a href="/leg-data/2term">
-                  <span>2<sup>nd</sup> Term</span>
+              <a href="/leg-data/global?region=sl">
+                  <span>Duch&#xE9; de Sealand</span>
               </a>
             </li>
             <li>
-              <a href="/leg-data/3term">
-                  <span>3<sup>rd</sup> Term</span>
+              <a href="/leg-data/global?region=er">
+                  <span>Freistaat Ehlrain</span>
               </a>
             </li>
             <li>
-              <a href="/leg-data/4term">
-                  <span>4<sup>th</sup> Term</span>
+              <a href="/leg-data/global?region=ac">
+                  <span>State of Acricene</span>
               </a>
             </li>
             <li>
-              <a href="/leg-data/5term">
-                  <span>5<sup>th</sup> Term</span>
-              </a>
-            </li>
-            <li>
-              <a href="/leg-data/6term">
-                  <span>6<sup>th</sup> Term</span>
-              </a>
-            </li>
-            <li>
-              <a href="/leg-data/7term">
-                  <span>7<sup>th</sup> Term</span>
+              <a href="/leg-data/global?region=tr">
+                  <span>State of Tryon</span>
               </a>
             </li>
           </ul>
@@ -374,6 +364,15 @@
             document.getElementById("thereareresults3").style.display = "";
             document.getElementById("noresults4").style.display = "none";
         }
+    }
+    
+    //On Startup
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const selectedRegion = urlParams.get('region');
+    
+    if(selectedRegion!==""){
+        document.querySelector('#filters-instant-regions-1').value = selectedRegion;
     }
     
     filterSearch();
