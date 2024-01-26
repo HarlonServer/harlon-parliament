@@ -224,5 +224,14 @@ hero_image: /img/parliament.png
         }
     }
     
+    //On Startup
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const selectedRegion = urlParams.get('region');
+    
+    if(selectedRegion!==""){
+        document.querySelector('#filters-instant-regions-1').value = selectedRegion;
+    }
+    
     filterSearch();
 </script>
